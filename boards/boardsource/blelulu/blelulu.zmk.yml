@@ -1,0 +1,18 @@
+file_format: "1"
+id: blelulu
+name: BLE Lulu
+url: https://boardsource.xyz
+type: board
+arch: arm
+features:
+  - keys
+  - display
+  - studio
+outputs:
+  - usb
+  - ble
+revisions:
+  - 1.0.0
+siblings:
+  - blelulu_left
+  - blelulu_right

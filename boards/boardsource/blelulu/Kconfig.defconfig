@@ -1,0 +1,47 @@
+#
+# Copyright (c) 2026 jack@pngu.org
+# SPDX-License-Identifier: MIT
+#
+
+if BOARD_BLELULU_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "BLE Lulu"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # BOARD_BLELULU_LEFT
+
+if BOARD_BLELULU_LEFT || BOARD_BLELULU_RIGHT
+
+config BOARD
+    default "blelulu"
+
+config ZMK_SPLIT
+    default y
+
+config BT_CTLR
+    default BT
+
+if USB
+
+config USB_NRFX
+    default y
+
+config USB_DEVICE_STACK
+    default y
+
+endif # USB
+
+if ZMK_DISPLAY
+
+config SPI
+    default y
+
+config ZMK_DISPLAY_BLANK_ON_IDLE
+    default n
+
+endif # ZMK_DISPLAY
+
+endif # BOARD_BLELULU_LEFT || BOARD_BLELULU_RIGHT
