@@ -109,8 +109,6 @@ nice_view_spi: &spi2 {
     pinctrl-1 = <&spi2_sleep>;
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio0 19 GPIO_ACTIVE_HIGH>;
-    // vertical mirror
     com-invdir;
-    // horizontal mirror
     segment-remap;
 };
