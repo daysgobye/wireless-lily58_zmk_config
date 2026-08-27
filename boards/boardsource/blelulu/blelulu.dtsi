@@ -108,5 +108,5 @@ nice_view_spi: &spi2 {
     pinctrl-0 = <&spi2_default>;
     pinctrl-1 = <&spi2_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio0 19 GPIO_ACTIVE_HIGH>;
+    cs-gpios = <&gpio0 21 GPIO_ACTIVE_HIGH>;
 };
