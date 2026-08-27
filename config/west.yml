@@ -2,10 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: invrtd
+      url-base: https://github.com/invrtd
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: invrtd
+      revision: nice!view-180
       import: app/west.yml
   self:
     path: config
